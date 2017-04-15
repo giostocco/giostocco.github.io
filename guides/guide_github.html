@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <!-- Complements -->
+    <meta charset="UTF-8">
+    <title>Help Guides:</title>
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/core.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript"> 
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39737599-2']);
+      _gaq.push(['_trackPageview']);
+     
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     
+    </script> 
+  </head>
+
+  <!-- logo -->
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span-12">
+          <img src="../images/logo.png" alt="Guides" />
+        </div>
+      </div>
+
+      <!-- Guides here -->
+      <div class="row-fluid content">
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Category</li>
+                <!-- home -->
+                <li id="vendor_Acer"><span>Index</span></li>
+                <ul class="nav nav-list">
+                  <li id="index"><a href="../index.html" class="index"><span>Index</span></a></li>
+                </ul>
+              <li class="nav-header">Guides</li>
+                <!-- gerrit -->
+                <li id="vendor_Acer"><span>Choose a guide</span></li>
+                <ul class="nav nav-list">
+                  <li id="guide_gerrit"><a href="../guides/guide_gerrit.html" class="guide"><span>Gerrit</span></a></li>
+                </ul>
+                <!-- dependencies -->
+                <ul class="nav nav-list">
+                  <li id="guide_dependencies"><a href="../guides/guide_dependencies.html" class="guide"><span>Dependencies</span></a></li>
+                </ul>
+                <!-- github -->
+                <ul class="nav nav-list">
+                  <li id="guide_github"><a href="../guides/guide_github.html" class="guide"><span>Commands git</span></a></li>
+                </ul>
+                <!-- building -->
+                <ul class="nav nav-list">
+                  <li id="guide_building"><a href="../guides/guide_building.html" class="guide"><span>Build Rom</span></a></li>
+                </ul>				
+            </ul>
+          </div>
+        </div>
+        <div class="span10">
+
+<!-- guide building -->
+<table class="table table-bordered table-striped">
+<center>
+  <h1>How to build rom Android</h1>
+</center>
+</table><br><br>
+
+<!-- tutorial -->
+
+<span class="" id="result_box" lang="en"><b><span>How to use git commands?</span></b></span><br /><span class="" id="result_box" lang="en"></span><span class="" id="result_box" lang="en"><br /><span>I
+ will leave some quick tips to use git, I will not leave something 
+professional, but something that can help in your day to day with 
+github.</span><br /><br /><b><span>First guide - How to send my source to github?</span></b><br /><br /><span>First you must create a repository for your source in github.</span><br /><span>Example:</span><br /><i><span>my_source_repo</span></i><br /><br /><span class="">That done, you should now go to your command terminal:</span></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class="">git remote add github https://github.com/YourUser/my_source_repo&nbsp;</span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><br /></span></span></i></span>
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class="">git add .</span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><br /></span></span></i></span>
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class="">git commit -m "Your commit title"</span></span></i></span><br />
+<span class="" id="result_box" lang="en"><span class=""><br /></span></span>
+<span class="" id="result_box" lang="en"><span class="">Choose your branch (my example - master):</span></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class="">git checkout -b master</span></span></i></span><br />
+<span class="" id="result_box" lang="en"><span class=""><br /></span></span>
+<span class="" id="result_box" lang="en"><span class="">Now push for your github:</span></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class="">git push --all github</span></span></i></span><br />
+<span class="" id="result_box" lang="en"><span class=""></span></span><br /><span class="" id="result_box" lang="en"><span class="">You will be prompted for your username and password, just type them and you are done.</span></span><br />
+<br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><b><span>Second guide - How do I update my repository?</span></b><br /><br /><span class="">Follow the commands below:</span></span></span></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git add .</span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git commit -m "Your change commit"</span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git push origin master</span></span></span></span></i></span><br />
+<br />
+<b><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class="">Third guide - How to make cherry-pick?</span></span></span></span></span></span></b><br />
+<br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">If you 
+are wanting to make a cherry-pick of some modification made by another 
+user, you should follow the steps below, but be sure to verify that this
+ change is compatible with your source.</span></span></span></span></span></span></span></span><br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">Commands:</span></span></span></span></span></span></span></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git remote add master https://github.com/OtherUser/repo_to_fetch</span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git fetch master</span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git cherry-pick LogCommitChanges</span></span></span></span></span></span></span></span></i></span><br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">&nbsp;</span></span></span></span></span></span></span></span><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">&nbsp;</span></span></span></span></span></span></span></span><br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">For revert commit</span></span></span></span></span></span></span></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git revert LogCommitChanges</span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">ctrl + x</span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git add .</span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git commit -s</span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">ctrl&nbsp;+ x</span></span></span></span></span></span></span></span><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">&nbsp;</span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git push origin master</span></span></span></span></span></span></span></span></i></span><br />
+<br />
+<b><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class="">Fourth tab - How to modify a commit title?</span></span></span></span></span></span></span></span></span></span></b><br />
+<br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">Let's suppose you missed the title to be placed at the time of the commit, follow the command below:</span></span></span></span></span></span></span></span></span></span></span></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">git commit --amend</span></span></span></span></span></span></span></span></span></span></span></span></i></span><br />
+<span style="background-color: #cccccc;"><i><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class="">ctrl&nbsp;+ x </span></span></span></span></span></span></span></span></span></span></span></span></i></span><br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span style="background-color: #cccccc;"><i>git commit --amend -m "New Title"</i></span> </span></span>&nbsp;</span></span></span></span></span></span></span></span></span></span><br />
+<br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><b><span class="short_text" id="result_box" lang="en"><span class="">Enjoy the guide !&nbsp;</span></span></b> </span></span></span></span></span></span></span></span><br />
+<span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""></span></span></span></span></span></span></span></span><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""> </span></span></span></span></span></span></span></span><span class="" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="" id="result_box" lang="en"><span class=""></span></span></span></span></span></span> </span></span>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

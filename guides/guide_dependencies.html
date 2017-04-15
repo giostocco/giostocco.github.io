@@ -1,0 +1,241 @@
+<html lang="en">
+  <head>
+    <!-- Complements -->
+    <meta charset="UTF-8">
+    <title>Help Guides:</title>
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../plugins/core.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript"> 
+	
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39737599-2']);
+      _gaq.push(['_trackPageview']);
+     
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+     
+    </script> 
+  </head>
+
+  <!-- logo -->
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span-12">
+          <img src="../images/logo.png" alt="Guides" />
+        </div>
+      </div>
+
+      <!-- Guides here -->
+      <div class="row-fluid content">
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Category</li>
+                <!-- home -->
+                <li id="vendor_Acer"><span>Index</span></li>
+                <ul class="nav nav-list">
+                  <li id="index"><a href="../index.html" class="index"><span>Index</span></a></li>
+                </ul>
+              <li class="nav-header">Guides</li>
+                <!-- gerrit -->
+                <li id="vendor_Acer"><span>Choose a guide</span></li>
+                <ul class="nav nav-list">
+                  <li id="guide_gerrit"><a href="../guides/guide_gerrit.html" class="guide"><span>Gerrit</span></a></li>
+                </ul>
+                <!-- dependencies -->
+                <ul class="nav nav-list">
+                  <li id="guide_dependencies"><a href="../guides/guide_dependencies.html" class="guide"><span>Dependencies</span></a></li>
+                </ul>
+                <!-- github -->
+                <ul class="nav nav-list">
+                  <li id="guide_github"><a href="../guides/guide_github.html" class="guide"><span>Commands git</span></a></li>
+                </ul>
+                <!-- building -->
+                <ul class="nav nav-list">
+                  <li id="guide_building"><a href="../guides/guide_building.html" class="guide"><span>Build Rom</span></a></li>
+                </ul>				
+            </ul>
+          </div>
+        </div>
+        <div class="span10">
+
+<!-- guide building -->
+<table class="table table-bordered table-striped">
+<center>
+  <h1>How to create a dependencies?</h1>
+</center>
+</table><br><br>
+
+<!-- tutorial -->
+
+<span class="" id="result_box" lang="en"><span title="Como criar uma dependencies?
+
+"><b>How to create a dependencies?</b></span></span><br />
+<span class="" id="result_box" lang="en"><span title="Como criar uma dependencies?
+
+"><b>&nbsp;</b></span><span title="Nessa guia vou explicar um pouco sobre dependencies, não sou nenhum profissional mas pretendo fazer isso para ajudar vocês.
+
+">In this guide I will explain a bit about dependencies, I am no professional but I intend to do this to help you.</span>
+<br /><br />
+<span title="O que é dependencies?
+"><b>What is dependencies?</b></span><span title="O nome já diz, são suas dependencias para construir sua rom, ou seja, aquilo que seu dispositivo depende para ser compilado a rom.
+
+">&nbsp;</span></span><br />
+<span class="" id="result_box" lang="en"><span title="O nome já diz, são suas dependencias para construir sua rom, ou seja, aquilo que seu dispositivo depende para ser compilado a rom.
+
+">The name already says, it's your dependencies to build your rom, ie what your device depends on to be compiled to rom.</span></span><br />
+<br />
+<b><span class="" id="result_box" lang="en"><span title="Para que server?
+"><span class="short_text" id="result_box" lang="en"><span class="">What is it for?</span></span></span></span></b><br />
+<span class="" id="result_box" lang="en"><span title="Para que server?
+"><span class="short_text" id="result_box" lang="en"><span class=""></span></span></span><span title="Quando sua dependencies está montada, ela serve para te auxiliar com sua build, sendo assim você não precisa aquele trabalho todo de ter que fazer o comando &quot;git clone&quot; em tudo.
+
+">When your dependencies are mounted, it helps you with your build, so 
+you do not need that whole job of having to do the "<i>git clone</i>" command 
+at all.</span></span><br />
+<span class="" id="result_box" lang="en"><span title="Quando sua dependencies está montada, ela serve para te auxiliar com sua build, sendo assim você não precisa aquele trabalho todo de ter que fazer o comando &quot;git clone&quot; em tudo.
+
+"><br /></span><span title="Como devo montar minha dependencies?
+"><b>How should I set up my dependencies?</b></span></span><br />
+<span class="" id="result_box" lang="en"><span title="Normalmente usam o nome prefixo da rom para suas dependencies, vamos ver como exemplo a LineageOS que coloca o nome lineage.dependencies.
+">Normally they use the name prefix of the rom for their dependencies, 
+we will see as an example the LineageOS that puts the name 
+lineage.dependencies.</span><span title="O mesmo pode ser feito em outras, Ex: aokp(lineage, cm, dnd, crdroid, e algumas aosp).dependencies.
+
+">The same can be done in others, eg: aokp(lineage, cm, dnd, crdroid, and some aosp).dependencies.</span><span title="Seu arquivo &quot;.dependencies&quot; deve ser montado de maneira especifica:
+">Your ".dependencies" file must be mounted in a specific way:</span><span title="Vamos supor que você precisa para seu dispositivo os seguintes repositórios para compilar:
+">Let's say you need the following repositories for your device to compile:</span></span><br />
+<span class="" id="result_box" lang="en"><span title="Vamos supor que você precisa para seu dispositivo os seguintes repositórios para compilar:
+">&nbsp;</span><i><span title="https://github.com/LineageOS/android_device_qcom_common
+">https://github.com/LineageOS/android_device_qcom_common</span><span title="https://github.com/LineageOS/android_device_vendor
+">&nbsp;</span></i></span><br />
+<span class="" id="result_box" lang="en"><i><span title="https://github.com/LineageOS/android_device_vendor
+">https://github.com/LineageOS/android_device_vendor</span><span title="https://github.com/LineageOS/android_device_common
+">&nbsp;</span></i></span><br />
+<span class="" id="result_box" lang="en"><i><span title="https://github.com/LineageOS/android_device_common
+">https://github.com/LineageOS/android_device_common</span></i></span><br />
+<span class="" id="result_box" lang="en"><span title="https://github.com/LineageOS/android_kernel_msmxxxx
+
+"><i>https://github.com/LineageOS/android_kernel_msmxxxx</i></span></span><br />
+<span class="" id="result_box" lang="en"><span title="https://github.com/LineageOS/android_kernel_msmxxxx
+
+"><br />
+<i>&nbsp;</i></span><span title="você iria precisar fazer isso manualmente em cada um dos repositórios:
+"><b>You would need to do this manually in each of the repositories</b>:</span><span title="git clone https://github.com/LineageOS/android_device_qcom_common -b branch device/qcom/common
+
+"><i>&nbsp;</i></span></span><br />
+<span class="" id="result_box" lang="en"><span title="git clone https://github.com/LineageOS/android_device_qcom_common -b branch device/qcom/common
+
+"><i>git clone https://github.com/LineageOS/android_device_qcom_common -b branch device/qcom/common</i></span></span><br />
+<span class="" id="result_box" lang="en"><span title="git clone https://github.com/LineageOS/android_device_qcom_common -b branch device/qcom/common
+
+"><i>&nbsp;</i></span><span title="Com a dependencies já estária montada pra você e isso não seria mais necessário, você somente iria precisar fazer &quot;git clone&quot; em sua device tree.
+
+">With dependencies already s</span></span><span class="" id="result_box" lang="en"><span title="Com a dependencies já estária montada pra você e isso não seria mais necessário, você somente iria precisar fazer &quot;git clone&quot; em sua device tree.
+
+">et up for you and this would no longer be 
+necessary, you would only need to "<i>git clone</i>" in your device tree.</span></span><br />
+<span class="" id="result_box" lang="en"><span title="Com a dependencies já estária montada pra você e isso não seria mais necessário, você somente iria precisar fazer &quot;git clone&quot; em sua device tree.
+
+"><br /></span><span title="Para montar sua dependencies precisa conter:
+"><b>To mount your dependencies must contain:</b></span><span title="remote = lugar de onte será clonado
+">&nbsp;</span></span><br />
+<span class="" id="result_box" lang="en"><span title="remote = lugar de onte será clonado
+">remote = place of onte will be cloned</span><span title="repository = endereço de acesso ao remote
+">&nbsp;</span></span><br />
+<span class="" id="result_box" lang="en"><span title="repository = endereço de acesso ao remote
+">repository = remote access address</span></span><br />
+<span class="" id="result_box" lang="en"><span title="target_path = local onde será clonado
+">target_path = where it will be cloned</span><span title="branch = branch que deve ser clonada
+
+">&nbsp;</span></span><br />
+<span class="" id="result_box" lang="en"><span title="branch = branch que deve ser clonada
+
+">branch = branch that should be cloned</span>
+<br /><span title="Você deve iniciar seu arquivo com &quot;[&quot; para sinalizar abertura da dependencies e terminar com &quot;]&quot; para sinalizar fechamento de sua dependencies.
+">You should start your file with "[" to signal opening of dependencies and end with "]" to signal closing of your dependencies.</span><span title="Para cada repositorio você precisa iniciar com &quot;{&quot; para sinalizar abertura de repositorio e terminar com &quot;}&quot; para sinalizar fechamento de seu repositório.
+">For each repository you need to start with "{" to signal repository 
+opening and end with "}" to signal closing of your repository.</span><span title="Lembre-se que sempre precisa a cada repositorio fechar com uma &quot;,&quot; exceto ao branch (ou ultima tag de cada repositorio).
+">Remember that you always need each repository to close with a "," except the branch (or last tag of each repository).</span><span title="Também, na maioria dos casos sua dependencies precisa de mais do que um repositorio lá, então a cada vez que terminar um repositorio ele deve terminar com &quot;},&quot; - somente o ultimo repositório não precisa de colocar virgula (,).
+
+">&nbsp;</span></span><br />
+<span class="" id="result_box" lang="en"><span title="Também, na maioria dos casos sua dependencies precisa de mais do que um repositorio lá, então a cada vez que terminar um repositorio ele deve terminar com &quot;},&quot; - somente o ultimo repositório não precisa de colocar virgula (,).
+
+">Also, in most cases your dependencies need more than one repository 
+there, so each time you finish a repository it should end with "}," - 
+only the last repository need not put a comma (,).</span>
+<br /><span title="Para facilitar o entendimento vou colocar um exemplo com apenas um repositório:
+"><b>For ease of understanding I will put an example with only one repository:</b></span></span><br />
+<span class="" id="result_box" lang="en"><span title="Para facilitar o entendimento vou colocar um exemplo com apenas um repositório:
+"><b>&nbsp;</b></span><i><span title="[
+ ">[<br />&nbsp;</span><span title="{
+  ">{<br />&nbsp;&nbsp;</span><span title="&quot;remote&quot;:      &quot;github&quot;,
+  ">"Remote": "github",<br />&nbsp;&nbsp;</span><span title="&quot;repository&quot;:  &quot;LineageOS/android_device_qcom_common&quot;,
+  ">"Repository": "LineageOS / android_device_qcom_common",<br />&nbsp;&nbsp;</span><span title="&quot;target_path&quot;: &quot;device/qcom/common&quot;,
+  ">"Target_path": "device / qcom / common",<br />&nbsp;&nbsp;</span><span title="&quot;branch&quot;:      &quot;cm-14.1&quot;
+ ">"Branch": "cm-14.1"<br />&nbsp;</span><span title="}
+">}</span></i></span><span class="" id="result_box" lang="en"><span title="]
+
+"><i>&nbsp;</i></span></span><br />
+<span class="" id="result_box" lang="en"><span title="]
+
+"><i>]</i></span></span><span class="" id="result_box" lang="en"><span title="]
+
+"><i>&nbsp;</i></span></span><br />
+<span class="" id="result_box" lang="en"><span title="]
+
+"><i>&nbsp;</i></span><span title="Nota: perceba que eu coloquei uma &quot;,&quot; no final de cada tag menos na branch por ser a ultima, e também não coloquei &quot;,&quot; no fechamento do repositorio &quot;}&quot; porque não tem outro depois.
+
+"><span style="color: red;"><b>Note:</b></span> I noticed that I put a "," at the end of each tag except the 
+branch because it is the last, and I also did not put "," at the closing
+ of the repository "}" because it has no other then.</span></span><br />
+<span class="" id="result_box" lang="en"><span title="Nota: perceba que eu coloquei uma &quot;,&quot; no final de cada tag menos na branch por ser a ultima, e também não coloquei &quot;,&quot; no fechamento do repositorio &quot;}&quot; porque não tem outro depois.
+
+"><br /></span><span title="Agora veja um exemplo com mais de um repositorio:
+"><b>Now see an example with more than one repository:</b></span></span><br />
+<span class="" id="result_box" lang="en"><span title="Agora veja um exemplo com mais de um repositorio:
+"><b>&nbsp;</b></span><i><span title="[
+ ">[<br />&nbsp;</span><span title="{
+  ">{<br />&nbsp;&nbsp;</span><span title="&quot;remote&quot;:     &quot;github&quot;,
+  ">"Remote": "github",<br />&nbsp;&nbsp;</span><span title="&quot;repository&quot;: &quot;LineageOS/android_device_qcom_common&quot;,
+  ">"Repository": "LineageOS / android_device_qcom_common",<br />&nbsp;&nbsp;</span><span title="&quot;target_path&quot;: &quot;device/qcom/common&quot;,
+  ">"Target_path": "device / qcom / common",<br />&nbsp;&nbsp;</span><span title="&quot;branch&quot;:     &quot;cm-14.1&quot;
+ ">"Branch": "cm-14.1"<br />&nbsp;</span><span title="},
+ ">},<br />&nbsp;</span><span title="{
+  ">{<br />&nbsp;&nbsp;</span><span title="&quot;remote&quot;:     &quot;github&quot;,
+  ">"Remote": "github",<br />&nbsp;&nbsp;</span><span title="&quot;repository&quot;: &quot;LineageOS/android_device_samsung_qcom-common&quot;,
+  ">"Repository": "LineageOS / android_device_samsung_qcom-common",<br />&nbsp;&nbsp;</span><span title="&quot;target_path&quot;: &quot;device/samsung/qcom-common&quot;,
+  ">"Target_path": "device / samsung / qcom-common",<br />&nbsp;&nbsp;</span><span title="&quot;branch&quot;:     &quot;cm-14.1&quot;
+ ">"Branch": "cm-14.1"<br />&nbsp;</span><span title="}
+">}</span></i></span><span class="" id="result_box" lang="en"><span title="]
+
+"><i>&nbsp;</i></span></span><br />
+<span class="" id="result_box" lang="en"><span title="]
+
+"><i>]</i></span></span><br />
+<span class="" id="result_box" lang="en"><span title="]
+
+"><i>&nbsp;</i></span><span title="Nota: perceba que tem uma &quot;,&quot; no fim de cada tag menos na branch por ser a ultima, mas no fechamento do primeiro repositório eu coloquei uma &quot;,&quot; porque logo depois eu iniciei outro repositorio, mas no fechamento do ultimo repositorio não foi"><span style="color: red;"><b>Note:</b></span>
+ note that there is a "," at the end of each tag except the last branch,
+ but at the closing of the first repository I put a "," because soon 
+after I started another repository, but at the closing of the last 
+repository it was not </span><span title="colocado uma &quot;,&quot;.
+
+">Placed a ",".</span><span title="O mesmo conceito é aplicado para mais repositórios.
+
+">The same concept is applied to more repositories.</span></span><br />
+<span class="" id="result_box" lang="en"><span title="O mesmo conceito é aplicado para mais repositórios.
+
+"><br /></span><b><span title="Espero que isso possa ajudar a montar sua própria dependencies.">I hope this can help you set up your own dependencies.</span></b></span>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

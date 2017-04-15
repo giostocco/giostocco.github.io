@@ -1,0 +1,24 @@
+body {
+    background: url('/static/background.jpg') no-repeat 0 0 white;
+    padding: 10px 0 20px 0;
+}
+.download-image {
+    margin-left: 0px !important;
+}
+
+.download-links {
+    margin-left: 0px !important;
+}
+
+.md5 {
+    font-size: 80%;
+}
+.content {
+    padding-top: 10px;
+}
+.adunit { 
+    text-align: center; 
+    padding-bottom: 10px; 
+}
+
+
